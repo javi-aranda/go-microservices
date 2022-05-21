@@ -16,9 +16,21 @@ El microservicio acepta peticiones con un `JSON` que incluya una cadena con clav
 ## Operaciones permitidas
 `/uppercase`: Devuelve una cadena en mayúsculas a partir de una cadena enviada como entrada.
 `/count`: Devuelve el número de caracteres de una cadena enviada como entrada.
-
+`/reverse`: Devuelve una cadena en el orden inverso a la cadena enviada como entrada.
 
 ## Uso con Dockerfile
 `$ docker build -t stringsvc1 .`
 
 `$ docker run -p 8080:8080 stringsvc1`
+
+## Ejemplos con cURL
+```
+$ curl -X POST -d'{"s":"hello, world"}' localhost:8080/uppercase
+{"v":"HELLO, WORLD"}
+
+$ curl -X POST -d'{"s":"hello, world"}' localhost:8080/count
+{"v":12}
+
+$ curl -X POST -d'{"s":"hello, world"}' localhost:8080/reverse
+{"v":"dlrow ,olleh"}
+```
