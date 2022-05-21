@@ -20,4 +20,5 @@ El microservicio acepta peticiones con un `JSON` que incluya una cadena con clav
 
 ## Uso con Dockerfile
 `$ docker build -t stringsvc1 .`
+
 `$ docker run -p 8080:8080 stringsvc1`
