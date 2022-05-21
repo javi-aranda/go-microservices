@@ -15,7 +15,9 @@ El microservicio acepta peticiones con un `JSON` que incluya una cadena con clav
 
 ## Operaciones permitidas
 `/uppercase`: Devuelve una cadena en mayúsculas a partir de una cadena enviada como entrada.
+
 `/count`: Devuelve el número de caracteres de una cadena enviada como entrada.
+
 `/reverse`: Devuelve una cadena en el orden inverso a la cadena enviada como entrada.
 
 ## Uso con Dockerfile
